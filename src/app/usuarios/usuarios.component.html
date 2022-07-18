@@ -1,0 +1,21 @@
+
+<section>
+ 
+    <table class="table ">
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Fecha Nacimiento</th>
+        <th>Edad</th>
+        <th>Domicilio</th>
+      </tr>
+      <tr *ngFor="let result of array">
+        <td>{{ result.id }}</td>
+        <td>{{ result.name }}</td>
+        <td>{{ result.fecha_nacimiento }}</td>
+        <td>{{ result.edad }}</td>
+        <td>{{ result.domicilio.domicilio }}, Colonia: {{ result.domicilio.colonia }}, Cp: {{ result.domicilio.cp }}, No.:{{ result.domicilio.numero_exterior }} </td>
+       
+      </tr>
+    </table>
+ </section>
